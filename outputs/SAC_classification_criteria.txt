@@ -1,0 +1,619 @@
+============================================================
+CLASSIFICATION CRITERIA: EXCLUSIVELY UPPER SAC vs UPPER AND LOWER SAC REARERS
+Generated: 2026-02-24 18:13:51
+============================================================
+
+OVERVIEW
+--------
+Fish assigned rearing_type == 'SAC' (n = 481) were sub-classified into
+three groups based on their otolith 87Sr/86Sr profiles during freshwater
+(FW) residence:
+
+  Exclusively Upper Sac: isotopic values remain consistently close to
+  ~0.705 throughout the FW phase, with no excursion into the lower
+  Sacramento / Delta range (~0.706).
+
+  Borderline Exclusively Upper Sac: profiles are ambiguous, with subtle
+  isotopic rises or minor bumps that cannot be confidently attributed to
+  either exclusive upper Sacramento rearing or lower mainstem influence.
+
+  Upper and Lower Sac: isotopic values show a characteristic mid-profile
+  bump rising into the ~0.706 range before ocean entry, indicating use of
+  the lower mainstem Sacramento River during rearing.
+
+Three classification levels were applied, each progressively more
+conservative.
+
+------------------------------------------------------------
+LEVEL 1 — ALL SAC REARERS
+------------------------------------------------------------
+  n = 481
+  All fish assigned rearing_type == 'SAC' in script 07_rearing_types.R.
+  PDF: figures/SAC_all_rearers.pdf
+
+------------------------------------------------------------
+LEVEL 2 — EXCLUSIVELY UPPER SAC (Sr threshold)
+------------------------------------------------------------
+  n = 87
+  Criterion: all SAC-labelled FW spots (Habitat == 'SAC',
+  Distance_um <= FWExit_dist) must have Sr8786_norm <= upper_sac_threshold.
+
+  upper_sac_threshold = 0.7053813
+  This threshold is the maximum 87Sr/86Sr value observed among SAC-labelled
+  FW spots of 5 expert-identified reference fish whose profiles were
+  visually confirmed as Exclusively Upper Sac rearers:
+    WR08-25, WR08-32, WR09-13, WR09-17, WR09-19
+
+  Rationale: fish rearing exclusively in the upper Sacramento River
+  show SAC-labelled spots tightly clustered near 0.705. Any spot
+  exceeding the reference maximum indicates influence from the lower
+  Sacramento River or Delta, whose Sr signature is higher (~0.706).
+  PDF: figures/Exclusively_Upper_Sac_Sr_threshold_only.pdf
+
+------------------------------------------------------------
+LEVEL 3 — EXCLUSIVELY UPPER SAC FINAL (Sr threshold + visual review)
+------------------------------------------------------------
+  n = 63
+  Applied on top of Level 2. Two filters, then visual review:
+
+  (a) ISOTOPIC RANGE STABILITY
+      sr_range_threshold = 5e-04
+      For each fish, the range (max - min) of SAC-labelled FW spots
+      excluding the first spot is computed. The first spot is excluded
+      because it may retain a residual maternal isotopic signal.
+      Fish whose range exceeds the threshold are flagged for review.
+
+      Threshold derivation: the maximum range among the 5 reference
+      fish was 0.0003983.
+      Problem fish with visually confirmed rising or bumpy profiles
+      had a minimum range of 0.000545, leaving a clean gap.
+      A threshold of 5e-04 was chosen to sit within this gap.
+      This criterion flagged 39 fish from Level 2 for visual review.
+
+  (b) VISUAL REVIEW OF FLAGGED FISH
+      All 39 flagged fish were individually inspected. Of these:
+      - 18 were confirmed as Exclusively Upper Sac rearers.
+      - 21 were classified as Borderline Exclusively Upper Sac.
+      Borderline fish show subtle rises or minor bumps that could reflect
+      real lower-Sacramento influence or measurement noise.
+  PDF: figures/Exclusively_Upper_Sac_final.pdf
+
+------------------------------------------------------------
+BORDERLINE EXCLUSIVELY UPPER SAC REARERS
+------------------------------------------------------------
+  n = 21
+  Fish that passed the Sr threshold (Level 2) but failed the stability
+  criterion and showed ambiguous profiles upon visual inspection.
+  Their otolith profiles have subtle isotopic variation that cannot be
+  confidently attributed to either Exclusively Upper Sac or Upper and
+  Lower Sac rearing.
+  PDF: figures/Borderline_Exclusively_Upper_Sac.pdf
+
+------------------------------------------------------------
+UPPER AND LOWER SAC REARERS
+------------------------------------------------------------
+  n = 397
+  Comprises two groups:
+    (i)  SAC rearers not meeting the Level 2 Sr threshold (n = 394):
+         Fish with SAC-labelled FW spots exceeding the upper SAC threshold,
+         consistent with use of the lower Sacramento River (Sr > 0.7053813).
+    (ii) Fish reclassified from Level 2 passes after visual review (n = 3):
+         Three fish passed the algorithmic Sr range stability criterion but
+         were excluded after individual visual inspection because their
+         profiles showed patterns inconsistent with Exclusively Upper Sac rearing:
+           WR16.7070  — monotonic rise in the last 3 SAC spots
+           WR15-80247 — single large upward jump between spots 4 and 5
+           WR15-80439 — bump spanning spots 5 to 7
+         These fish are counted as Upper and Lower Sac rearers.
+  PDF: figures/Lower_Sacramento_rearers.pdf
+
+============================================================
+SUMMARY TABLE
+============================================================
+  Group                                                  n      %
+  -----                                                  -    ---
+  All SAC rearers (Level 1)                            481 100.0%
+  Exclusively Upper Sac — Sr threshold (Level 2)      87  18.1%
+  Exclusively Upper Sac — final                       63  13.1%
+  Borderline Exclusively Upper Sac                      21   4.4%
+  Upper and Lower Sac (incl. 3 reclassified)           397  82.5%
+============================================================
+
+============================================================
+SAMPLE ID LISTS BY GROUP
+============================================================
+(sorted alphabetically within each group)
+
+------------------------------------------------------------
+EXCLUSIVELY UPPER SAC REARERS (n = 63)
+------------------------------------------------------------
+  WR08-25
+  WR08-32
+  WR09-11
+  WR09-13
+  WR09-17
+  WR09-19
+  WR09-32
+  WR09-40
+  WR09-46
+  WR15-5025
+  WR15-5027
+  WR15-5141
+  WR15-5254
+  WR15-5265
+  WR15-5302
+  WR15-5321
+  WR15-7016
+  WR15-7021
+  WR15-7189
+  WR15-7308
+  WR15-7332
+  WR15-80145
+  WR15-80261
+  WR15-80310
+  WR15-80330
+  WR15-80366
+  WR16.5010
+  WR16.5012
+  WR16.5022
+  WR16.5030
+  WR16.5048
+  WR16.5050
+  WR16.5055
+  WR16.5062
+  WR16.5070
+  WR16.5080
+  WR16.5081
+  WR16.5100
+  WR16.5122
+  WR16.5125
+  WR16.5129
+  WR16.7003
+  WR16.7020
+  WR16.7028
+  WR16.7048
+  WR16.7055
+  WR16.7058
+  WR16.7069
+  WR16.7074
+  WR16.7075
+  WR16.7077
+  WR16.7080
+  WR16.7099
+  WR16.7100
+  WR16.7106
+  WR16.80036
+  WR16.80049
+  WR16.80055
+  WR16.80058
+  WR16.80060
+  WR17.7001
+  WR17.80054
+  WR17.80068
+
+------------------------------------------------------------
+BORDERLINE EXCLUSIVELY UPPER SAC REARERS (n = 21)
+------------------------------------------------------------
+  WR15-7373
+  WR15-80299
+  WR16.5015
+  WR16.5031
+  WR16.5043
+  WR16.5056
+  WR16.5069
+  WR16.5079
+  WR16.7056
+  WR16.7079
+  WR16.7087
+  WR16.7102
+  WR16.7107
+  WR16.7118
+  WR16.80048
+  WR16.80053
+  WR16.80054
+  WR16.80056
+  WR16.80062
+  WR16.80157
+  WR17.7005
+
+------------------------------------------------------------
+UPPER AND LOWER SAC REARERS (n = 397, incl. 3 reclassified)
+------------------------------------------------------------
+  WR07-09
+  WR07-10
+  WR07-13
+  WR07-18
+  WR07-20
+  WR07-24
+  WR07-26
+  WR07-27
+  WR07-28
+  WR07-29
+  WR07-30
+  WR08-03
+  WR08-10
+  WR08-12
+  WR08-16
+  WR08-17
+  WR08-20
+  WR08-26
+  WR08-30
+  WR08-31
+  WR08-37
+  WR08-40
+  WR08-44
+  WR08-45
+  WR08-48
+  WR08-50
+  WR08-53
+  WR08-55
+  WR08-58
+  WR08-66
+  WR08-68
+  WR08-72
+  WR08-74
+  WR08-75
+  WR08-76
+  WR08-83
+  WR08-86
+  WR08-87
+  WR08-88
+  WR08-89
+  WR08-96
+  WR09-02
+  WR09-03
+  WR09-04
+  WR09-05
+  WR09-06
+  WR09-08
+  WR09-09
+  WR09-14
+  WR09-15
+  WR09-21
+  WR09-23
+  WR09-24
+  WR09-27
+  WR09-28
+  WR09-29
+  WR09-31
+  WR09-33
+  WR09-35
+  WR09-36
+  WR09-37
+  WR09-38
+  WR09-39
+  WR09-44
+  WR09-47
+  WR09-48
+  WR09-49
+  WR09-52
+  WR09-57
+  WR09-58
+  WR09-65
+  WR09-71
+  WR15-5006
+  WR15-5007
+  WR15-5008
+  WR15-5011
+  WR15-5019
+  WR15-5023
+  WR15-5028
+  WR15-5029
+  WR15-5030
+  WR15-5038
+  WR15-5046
+  WR15-5048
+  WR15-5054
+  WR15-5060
+  WR15-5064B
+  WR15-5065
+  WR15-5069
+  WR15-5075
+  WR15-5079
+  WR15-5085
+  WR15-5089
+  WR15-5098
+  WR15-5105
+  WR15-5108
+  WR15-5115
+  WR15-5124
+  WR15-5127
+  WR15-5134
+  WR15-5142
+  WR15-5151
+  WR15-5157
+  WR15-5157B
+  WR15-5163
+  WR15-5167
+  WR15-5171
+  WR15-5182
+  WR15-5207
+  WR15-5211
+  WR15-5213
+  WR15-5216
+  WR15-5220
+  WR15-5223
+  WR15-5226
+  WR15-5233
+  WR15-5242
+  WR15-5268
+  WR15-5271
+  WR15-5283
+  WR15-5288
+  WR15-5299
+  WR15-5303
+  WR15-5312
+  WR15-5325
+  WR15-5329
+  WR15-5346
+  WR15-5350
+  WR15-5353
+  WR15-5356
+  WR15-5359
+  WR15-5362
+  WR15-5379
+  WR15-5383
+  WR15-5389
+  WR15-5400
+  WR15-5412
+  WR15-5417
+  WR15-7003
+  WR15-7005
+  WR15-7007
+  WR15-7013
+  WR15-7015
+  WR15-7019
+  WR15-7022
+  WR15-7025
+  WR15-7028
+  WR15-7031B
+  WR15-7032
+  WR15-7037
+  WR15-7044
+  WR15-7047
+  WR15-7051
+  WR15-7053
+  WR15-7054
+  WR15-7064
+  WR15-7071
+  WR15-7074
+  WR15-7081
+  WR15-7086
+  WR15-7091
+  WR15-7099
+  WR15-7107
+  WR15-7110
+  WR15-7113
+  WR15-7116
+  WR15-7120
+  WR15-7129
+  WR15-7142
+  WR15-7146
+  WR15-7160
+  WR15-7172
+  WR15-7179
+  WR15-7187
+  WR15-7193
+  WR15-7198
+  WR15-7202
+  WR15-7207
+  WR15-7212
+  WR15-7216
+  WR15-7239
+  WR15-7244
+  WR15-7257
+  WR15-7262
+  WR15-7273
+  WR15-7282
+  WR15-7287
+  WR15-7292
+  WR15-7301
+  WR15-7303
+  WR15-7306B
+  WR15-7321
+  WR15-7326
+  WR15-7340
+  WR15-7352
+  WR15-7356
+  WR15-7370
+  WR15-7371
+  WR15-7374
+  WR15-7375
+  WR15-80117
+  WR15-80137
+  WR15-80140
+  WR15-80148
+  WR15-80157
+  WR15-80181
+  WR15-80189
+  WR15-80196
+  WR15-80201
+  WR15-80207
+  WR15-80215
+  WR15-80217
+  WR15-80218
+  WR15-80223
+  WR15-80224
+  WR15-80225
+  WR15-80230
+  WR15-80232
+  WR15-80240
+  WR15-80246
+  WR15-80247
+  WR15-80248
+  WR15-80249
+  WR15-80251
+  WR15-80252
+  WR15-80258
+  WR15-80259
+  WR15-80262
+  WR15-80263
+  WR15-80264
+  WR15-80266
+  WR15-80268
+  WR15-80272
+  WR15-80275
+  WR15-80282
+  WR15-80283
+  WR15-80285
+  WR15-80286
+  WR15-80294
+  WR15-80295
+  WR15-80297
+  WR15-80305
+  WR15-80311
+  WR15-80312
+  WR15-80320
+  WR15-80326
+  WR15-80332
+  WR15-80334
+  WR15-80341
+  WR15-80342
+  WR15-80398
+  WR15-80400
+  WR15-80424
+  WR15-80425
+  WR15-80427
+  WR15-80439
+  WR15-80470
+  WR15-80474
+  WR15-80475
+  WR15-80498
+  WR15-80509
+  WR15-80530
+  WR15-80539
+  WR15-80611
+  WR15-80671
+  WR16.5001
+  WR16.5002
+  WR16.5003
+  WR16.5004
+  WR16.5005
+  WR16.5006
+  WR16.5007
+  WR16.5008
+  WR16.5011
+  WR16.5013
+  WR16.5014
+  WR16.5018
+  WR16.5019
+  WR16.5026
+  WR16.5029
+  WR16.5032
+  WR16.5034
+  WR16.5036
+  WR16.5037
+  WR16.5038
+  WR16.5039
+  WR16.5042
+  WR16.5047
+  WR16.5049
+  WR16.5051
+  WR16.5052
+  WR16.5057
+  WR16.5058
+  WR16.5060
+  WR16.5063
+  WR16.5064
+  WR16.5065
+  WR16.5067
+  WR16.5068
+  WR16.5074
+  WR16.5086
+  WR16.5087
+  WR16.5088
+  WR16.5090
+  WR16.5092
+  WR16.5093
+  WR16.5097
+  WR16.5098
+  WR16.5099
+  WR16.5103
+  WR16.5105
+  WR16.5108
+  WR16.5117
+  WR16.5120
+  WR16.5124
+  WR16.5126
+  WR16.5131
+  WR16.7001
+  WR16.7004
+  WR16.7005
+  WR16.7010
+  WR16.7011
+  WR16.7012
+  WR16.7015
+  WR16.7016
+  WR16.7017
+  WR16.7018
+  WR16.7021
+  WR16.7022
+  WR16.7023
+  WR16.7025
+  WR16.7026
+  WR16.7029
+  WR16.7030
+  WR16.7034
+  WR16.7036
+  WR16.7039
+  WR16.7041
+  WR16.7042
+  WR16.7049
+  WR16.7050
+  WR16.7051
+  WR16.7054
+  WR16.7057
+  WR16.7060
+  WR16.7061
+  WR16.7063
+  WR16.7068
+  WR16.7070
+  WR16.7071
+  WR16.7081
+  WR16.7082
+  WR16.7083
+  WR16.7085
+  WR16.7089
+  WR16.7091
+  WR16.7092
+  WR16.7095
+  WR16.7097
+  WR16.7101
+  WR16.7103
+  WR16.7104
+  WR16.7105
+  WR16.7108
+  WR16.7109
+  WR16.7110
+  WR16.7111
+  WR16.7112
+  WR16.7115
+  WR16.7117
+  WR16.7119
+  WR16.7120
+  WR16.80024
+  WR16.80025
+  WR16.80032
+  WR16.80040
+  WR16.80050
+  WR16.80051
+  WR16.80059
+  WR16.80063
+  WR16.80095
+  WR16.80123
+  WR16.80220
+  WR16.80458
+  WR17.5006
+  WR17.5016
+  WR17.5048
+  WR17.5061
+  WR17.7002
+  WR17.7003
+  WR17.7012
+  WR17.7027
+  WR17.80036
+  WR17.80235
+  WR17.80279
+  WR17.80393
+  WR17.80408
+============================================================
