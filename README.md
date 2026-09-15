@@ -1,17 +1,18 @@
-# Winter-Run Chinook Salmon Freshwater Rearing Habitat Use: Otolith Microchemistry Analysis
-
-**Publication:** Morais et al., *Ecosphere* (2026)  
-**Project Title:** Droughts delay juvenile salmon migration and truncate diversity in habitat use
+**Title:** Droughts delay juvenile salmon migration and truncate diversity in habitat use
+**Authors:** Pedro Morais, Anna Sturrock, Corey C. Phillis, George Whitman, Stephanie M. Carlson, Rachel C. Johnson
+**Journal:** Ecosphere
+**Year:** 2026
+**DOI:** https://doi.org/10.1002/ecs2.70779
 
 ---
 
 ## Project Overview
 
-This repository contains R scripts, data files, and output tables from a comprehensive otolith microchemistry analysis of winter-run Chinook salmon. The analysis uses strontium isotope ratios (⁸⁷Sr/⁸⁶Sr) measured along otolith profiles to reconstruct the freshwater rearing habitat use of individual fish, with integration of environmental (river flow, temperature) and juvenile passage data to understand how habitat use and growth relate to environmental conditions during rearing.
+This repository contains R scripts, data files, and output tables from a comprehensive otolith chemistry analysis of winter-run Chinook salmon. The analysis uses strontium isotope ratios (⁸⁷Sr/⁸⁶Sr) measured along otolith profiles to reconstruct individual fish freshwater rearing habitat use, integrating environmental (river flow, temperature) and juvenile passage data to understand how habitat use and growth relate to environmental conditions during rearing.
 
 **Sample:** 705 winter-run Chinook salmon otoliths  
 **Brood Years:** 2004–2006 and 2011–2015 (adult escapement 2007–2009 and 2015–2017)  
-**Geographic Focus:** Sacramento River system, California  
+**Geographic Focus:** Sacramento River, California (United States)  
 
 ---
 
