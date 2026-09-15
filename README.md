@@ -1,8 +1,3 @@
----
-output:
-  html_document: default
-
----
 **Title:** Data and Code for: Droughts delay juvenile salmon migration and truncate diversity in habitat use
 
 **Authors:** Pedro Morais, Anna Sturrock+, Corey C. Phillis, George Whitman, Stephanie M. Carlson, Rachel C. Johnson
