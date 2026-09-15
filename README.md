@@ -1,7 +1,7 @@
 ---
 output:
   html_document: default
-  pdf_document: default
+
 ---
 **Title:** Data and Code for: Droughts delay juvenile salmon migration and truncate diversity in habitat use
 
