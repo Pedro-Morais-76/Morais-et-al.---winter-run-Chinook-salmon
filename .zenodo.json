@@ -1,0 +1,32 @@
+{
+  "creators": [
+    {
+      "name": "Pedro Morais",
+      "affiliation": "University of California, Berkeley / University of Texas Marine Science Institute"
+    },
+    {
+      "name": "Anna Sturrock (equal first author)",
+      "affiliation": "University of California, Davis / University of Essex"
+    },
+    {
+      "name": "Corey C. Phillis",
+      "affiliation": "Metropolitan Water District of Southern California"
+    },
+    {
+      "name": "George Whitman",
+      "affiliation": "University of California, Davis"
+    },
+    {
+      "name": "Stephanie M. Carlson",
+      "affiliation": "University of California, Berkeley"
+    },
+    {
+      "name": "Rachel C. Johnson",
+      "affiliation": "University of California, Davis / National Marine Fisheries Service, Southwest Fisheries Science Center"
+    }
+  ],
+  "title": "Data and Code for: Droughts delay juvenile salmon migration and truncate diversity in habitat use",
+  "description": "Data and R scripts for otolith chemistry analysis of winter-run Chinook salmon published in Ecosphere (2026). Anna Sturrock and Pedro Morais contributed equally to this work.",
+  "upload_type": "dataset",
+  "access_right": "open"
+}
