@@ -2,7 +2,7 @@
 
 **Authors:** Pedro Morais, Anna Sturrock+, Corey C. Phillis, George Whitman, Stephanie M. Carlson, Rachel C. Johnson
 
-+ equal contribution as the first author
+\+ equal contribution as the first author
 
 **Journal:** Ecosphere
 
