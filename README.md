@@ -1,7 +1,11 @@
 **Title:** Droughts delay juvenile salmon migration and truncate diversity in habitat use
+
 **Authors:** Pedro Morais, Anna Sturrock, Corey C. Phillis, George Whitman, Stephanie M. Carlson, Rachel C. Johnson
+
 **Journal:** Ecosphere
+
 **Year:** 2026
+
 **DOI:** https://doi.org/10.1002/ecs2.70779
 
 ---
