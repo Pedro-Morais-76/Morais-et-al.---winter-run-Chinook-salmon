@@ -14,7 +14,7 @@
 #' **DOI:** https://doi.org/10.1002/ecs2.70779
 #' 
 #' **Authors:** 
-#' Pedro Morais1,*, Anna Sturrock2,3+, Corey C. Phillis4, George Whitman2, 
+#' Pedro Morais1,*, Anna M. Sturrock2,3+, Corey C. Phillis4, George Whitman2, 
 #' Stephanie M. Carlson1, Rachel C. Johnson2,5
 #' 
 #' **Affiliations:**
