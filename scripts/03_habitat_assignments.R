@@ -37,7 +37,7 @@
 #' Pedro Morais; Email: pedro.morais@austin.utexas.edu
 #' 
 #' **Credits:**
-#' This script was originally created by Anna Sturrock and revised by Pedro Morais.
+#' This script was originally created by Anna M. Sturrock and revised by Pedro Morais.
 #' 
 
 # ------------------------------------------------------------------------------
