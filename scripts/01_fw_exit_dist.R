@@ -222,4 +222,4 @@ write.csv(FWExit_final, "outputs/WR_FW_Exit_allyrs.csv", row.names = FALSE)
 
 # Join back to megafile and export final cleaned dataset
 wr_megafile <- left_join(wr_megafile, FWExit_final[, c('Sample_ID', 'FWExit_dist')], by = "Sample_ID")
-write.csv(wr_megafile, 'outputs/sr8786_dat_with_fw_exit_dist.csv', row.names = FALSE)
+write.csv(wr_megafile, 'outputs/sr8786_dat_with_fw_exit_dist.csv', row.names = TRUE)
