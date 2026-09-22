@@ -167,7 +167,7 @@ text(
   x = cover_left,
   y = 0.515,
   labels = expression(
-    plain("Pedro Morais, Anna Sturrock")^{plain("+")} *
+    plain("Pedro Morais, Anna M. Sturrock")^{plain("+")} *
       plain(", Corey C. Phillis, George Whitman, Stephanie M. Carlson,")
   ),
   adj = c(0, 0.5),
