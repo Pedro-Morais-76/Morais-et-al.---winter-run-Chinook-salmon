@@ -98,11 +98,12 @@ wr_megafile_paper <- wr_megafile |>
 
 # Select IDs of representative profiles
 example_ids <- c(
-  "WR16.5056", "WR15-5163", # SAC upper and SAC upper-lower
-  "WR15-80226",             # AME
-  "WR15-7069",              # DEL
-  "WR15-7349",              # LAS
-  "WR09-55"                 # X
+  "WR16.5056",   # Panel A - SAC upper
+  "WR15-5163",   # Panel B - SAC upper-lower
+  "WR15-7349",   # Panel C - LAS
+  "WR15-7069",   # Panel D - FEA/DEL
+  "WR15-80226",  # Panel E - AME
+  "WR09-55"      # Panel F - X
 )
 
 examples_df <- wr_megafile_paper |> 
